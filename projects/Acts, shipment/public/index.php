@@ -49,17 +49,19 @@
             <th scope="col">Дата отгрузки</th>
             <th scope="col">Инициатор</th>
             <th scope="col">Комментарии</th>
+            <th scope="col">#</th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>1. XS115PC Палец EM2</td>
+            <td>3</td>
+            <td>МС</td>
+            <td>24.06.24</td>
+            <td>Бобров</td>
+            <td>По письму от 23.06.24</td>
+            <td><button class="btn btn-outline-success" type="submit">Развернуть</button></td>
         </tr>
         </tbody>
     </table>
