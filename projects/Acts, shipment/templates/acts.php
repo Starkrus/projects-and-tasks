@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Акт приема-передачи</title>
-    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet/stylesheet.css">
 </head>
 <body>
 
