@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.details, .signatures {
+    width: 100%;
+    margin-top: 20px;
+}
+.details td, .details th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.signatures {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.signatures div {
+    width: 45%;
+    text-align: center;
+}
+.signature-line {
+    margin-top: 40px;
+}
