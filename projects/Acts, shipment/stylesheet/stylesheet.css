@@ -2,37 +2,89 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
 .container {
-    max-width: 800px;
+    max-width: 1000px; /* Увеличиваем ширину контейнера */
     margin: 0 auto;
     border: 1px solid black;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
-h1 {
+
+h4 {
     text-align: center;
+    margin-bottom: 20px;
 }
-.details, .signatures {
-    width: 100%;
-    margin-top: 20px;
+
+.details {
+    width: 100%; /* Устанавливаем ширину в 100% */
+    margin: 20px auto; /* Центрируем контейнер и добавляем отступы сверху и снизу */
+    padding: 0; /* Убираем внутренние отступы */
 }
-.details td, .details th {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-}
+
 .details table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /* Устанавливаем ширину таблицы в 100% */
+    border-collapse: collapse; /* Убираем двойные границы ячеек */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
 }
+
+.details td, .details th {
+    border: 1px solid black; /* Устанавливаем границу для ячеек */
+    padding: 15px; /* Увеличиваем отступы для ячеек */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.details th {
+    background-color: #f8f8f8; /* Фоновый цвет для заголовков */
+    width: auto; /* Позволяем ширине заголовка адаптироваться к содержимому */
+}
+
 .signatures {
-    margin-top: 40px;
+    width: 100%;
+    margin: 40px 0;
     display: flex;
     justify-content: space-between;
 }
+
 .signatures div {
     width: 45%;
     text-align: center;
 }
+
 .signature-line {
     margin-top: 40px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+@media print {
+    .print-button {
+        display: none;
+    }
+
+    .container {
+        border: none;
+        box-shadow: none;
+    }
+
+    @page {
+        margin: 20mm;
+    }
 }
