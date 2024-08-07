@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
     <h4> приема-передачи товара</h4>
     <h4>№<?= $_GET['id'] ?></h4>
     <p>от <?= date('d.m.Y', strtotime($act_data[0]['date'])) ?> г.</p>
-    <p>ООО "Евразия машинери" передает, а <?= htmlspecialchars($act_data[0]['received']) ?> принимает следующие позиции:</p>
+    <p>ООО "Евразия машинери" передает, а <?= htmlspecialchars($act_data[0]['sent']) ?> принимает следующие позиции:</p>
 
     <div class="details">
         <table class="table table-striped table-hover">
@@ -71,16 +71,16 @@ if ($result->num_rows > 0) {
         <div>
             <p>Передает:</p>
             <p>ООО "Евразия машинери"</p>
-            <p class="signature-line">___________________________</p>
+            <p class="signature-line"></p>
             <p>(подпись)</p>
-            <p>от <?= date('d.m.Y', strtotime($act_data[0]['date'])) ?></p>
+            <p><?= date('d.m.Y', strtotime($act_data[0]['date'])) ?>г.</p>
         </div>
         <div>
             <p>Принимает:</p>
-            <p><?= htmlspecialchars($act_data[0]['received']) ?></p>
-            <p class="signature-line">___________________________</p>
+            <p><?= htmlspecialchars($act_data[0]['sent']) ?></p>
+            <p class="signature-line"></p>
             <p>(подпись)</p>
-            <p>«___» __________ 20__ г.</p>
+            <p>___ __________ 20__ г.</p>
         </div>
     </div>
 
